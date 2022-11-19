@@ -12,6 +12,14 @@ Test: "It should return 0 if 0 is the input value."
 Code: countToValue(0);
 Expected Output: [0]
 
+Test: "It should return a boolean of false if the input is NaN."
+Code: countToValue("dog");
+Expected Output: false
+
+Test: "It should return a boolean of false if the input is empty."
+Code: countToValue();
+Expected Output: false
+
 Describe returnString():
 
 Test: "It should accept the value of a number and return the value of a string."
@@ -19,9 +27,6 @@ Code:
 //example const text = "hello";
 //example wordCounter(text);
 Expected Output: 
-
-
-
 
 Describe replaceNumberWithText():
 
@@ -36,16 +41,6 @@ Expected Output:
 Test: "It should accept input of numbers and output both numbers and text depending on the number."
 Code:
 Expected Output: 
-
-Describe notANumber():
-
-Test: "It should return a boolean of false if the input is NaN."
-Code:
-Expected Output: 
-
-Test: "It should return a boolean of false if the input is empty."
-Code:
-Expected Output:
 
 Describe addYourNameHere():
 Test: "It should return a phrase that uses inputted name."

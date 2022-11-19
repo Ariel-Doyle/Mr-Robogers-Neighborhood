@@ -15,4 +15,16 @@ function countToValue(number) {
 }
 
 
+function findNumber(array) {
+  let separateOutNum = ("" + number).split("");
+  //let sum=0;
+  for (i=0; i < separateOutNum.length; i++) {
+    if (separateOutNum.includes(3)) {
+      separateOutNum += 1;
+    }
+    //sum = sum + parseInt(output[i], 10);
+  }
+  return separateOutNum;   
+}
+
 
