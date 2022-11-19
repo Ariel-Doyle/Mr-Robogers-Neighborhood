@@ -8,7 +8,11 @@ function countToValue(number) {
     for (i=0; i >= number; i-=1) {
       newArray.unshift(i);
     }
-  } 
+  } else if (isNaN(number)) {
+    return false;
+  }
   return newArray;
 }
+
+
 
