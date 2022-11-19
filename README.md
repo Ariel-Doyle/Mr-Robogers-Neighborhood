@@ -8,11 +8,11 @@ Expected Output:
 
 Describe countToValue():
 
-Test: "It should accept a positive numerical value and return all the numbers between 0 and the input number."
-Code:
-Expected Output: 
+*Test: "It should accept a positive numerical value and return all the numbers between 0 and the input number."
+Code: counttoValue(5);
+Expected Output: [0,1,2,3,4,5] 
 
-Test: "It should accept negative values and count down all the numbers between 0 and the negative input."
+**Test: "It should accept negative values and count down all the numbers between 0 and the negative input."
 Code:
 Expected Output: 
 
