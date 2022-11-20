@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: whitesmoke;
+  background-image: url('../img/rock-n-roll-monkey-R4WCbazrD1g-unsplash.jpg ');
+}
+
 .hidden {
   display: none;
+}
+
+#full-page {
+  text-align: center;
+}
+
+label:hover {
+  background-color: skyblue;
+  padding-right: 20%cd ;
+}
+
+#output {
+  text-align: center;
+  padding: 50px;
+  font-size: xx-large;
+  color:rgb(13, 130, 100);
+  border-style: double;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+.pressBtn {
+  border: none;
+  border-radius: 7px;
+  background-color: greenyellow;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-style: oblique;
+}
+
+.pressBtn:hover {
+  background-color: rgb(12, 178, 68);
 }
