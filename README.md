@@ -20,6 +20,7 @@ _This is a simple HTML webpage as practice for writing code in line with lessons
 
 ## Setup/Installation Requirements
 
+- _You can access this page via [GitHub Pages](https://Ariel-Doyle.github.io/Mr-Robogers-Neighborhood)_
 - _Access [Github](https://github.com/)_
 - _Clone this repository (https://github.com/Ariel-Doyle/Mr-Robogers-Neighborhood.git) to your desktop_
 - _Navigate to the top level of the directory_
