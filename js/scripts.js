@@ -27,3 +27,26 @@ function robogerIt(number) {
     return number;
   }
 }
+
+window.addEventListener("load", function() {
+  let form = document.querySelector("form");
+  let startBtn = document.getElementById("start-btn");
+  //let tryAgainBtn = document.getElementById("reset-btn");
+  let inputDiv = document.getElementById("input-field")
+  let formDiv = document.getElementById("form-div");
+
+  document.body.addEventListener("click", function() {
+    formDiv.removeAttribute("class");
+    startBtn.classList.add("hidden");
+  });
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    inputDiv.classList.add("hidden");
+    document.getElementById("output").innerText = robogerIt();
+  });
+
+
+
+
+})
