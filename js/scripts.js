@@ -12,6 +12,7 @@ function countToValue(number) {
     return false;
   }
   return newArray;
+  console.log(newArray);
 }
 
 // This will need to use array.map!
@@ -29,11 +30,14 @@ function robogerIt(number) {
 }
 
 window.addEventListener("load", function() {
-  let form = document.querySelector("form");
-  let startBtn = document.getElementById("start-btn");
-  //let tryAgainBtn = document.getElementById("reset-btn");
-  let inputDiv = document.getElementById("input-field")
-  let formDiv = document.getElementById("form-div");
+  const form = document.querySelector("form");
+  const startBtn = document.getElementById("start-btn");
+  const tryAgainBtn = document.getElementById("reset-btn");
+  const inputDiv = document.getElementById("input-field")
+  const formDiv = document.getElementById("form-div");
+  let input = document.getElementById("input-box").value;
+  const arrayFromInput = countToValue(input);
+
 
   document.body.addEventListener("click", function() {
     formDiv.removeAttribute("class");
@@ -43,7 +47,7 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(e) {
     e.preventDefault(); 
     inputDiv.classList.add("hidden");
-    document.getElementById("output").innerText = robogerIt();
+    document.getElementById("output").innerText = arrayFromInput;
   });
 
 
