@@ -3,8 +3,12 @@
 body {
   margin: 0;
   font-family: 'Roboto Slab', serif;
-  background-color: whitesmoke;
+  background-color: gray;
   background-image: url('../img/rock-n-roll-monkey-R4WCbazrD1g-unsplash.jpg ');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;  
 }
 
 .hidden {
@@ -15,16 +19,40 @@ body {
   text-align: center;
 }
 
-label:hover {
-  background-color: skyblue;
-  padding-right: 20%cd ;
+#input-header {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-#output {
+#input-field {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   padding: 50px;
   font-size: xx-large;
-  color:rgb(13, 130, 100);
+  color: black;
+  border-color: rgb(14, 201, 73);
+  border-style: double;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+#input-box {
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 7px;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-style: oblique;
+}
+
+#count-results {
+  margin-top: 40px;
+  text-align: center;
+  padding: 50px;
+  font-size: xx-large;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgb(14, 201, 73);
   border-style: double;
   border-width: 5px;
   border-radius: 5px;
@@ -42,3 +70,4 @@ label:hover {
 .pressBtn:hover {
   background-color: rgb(12, 178, 68);
 }
+
