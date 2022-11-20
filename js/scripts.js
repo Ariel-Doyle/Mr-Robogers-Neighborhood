@@ -32,18 +32,20 @@ function handleFormSubmission(e) {
   const form = document.querySelector("form");
   const showNumbersBtn = document.getElementById("show-results-btn");
   const tryAgainBtn = document.getElementById("reset-btn");
-  const inputDiv = document.getElementById("input-field");
+  const inputDiv = document.getElementById("input-header");
   const resultDiv = document.getElementById("count-results");
+  const formDiv = document.getElementById("input-field");
 
   showNumbersBtn.addEventListener("click", function() {
-    inputDiv.classList.remove("hidden");
+    inputDiv.classList.add("hidden");
+    formDiv.classList.add("hidden");
     resultDiv.classList.remove("hidden");
   });
   tryAgainBtn.addEventListener("click", function() {
     inputDiv.classList.remove("hidden");
+    formDiv.classList.remove("hidden");
     resultDiv.classList.add("hidden");
-  });
-  
+  });  
 
   form.addEventListener("submit", function() {
     let input = document.getElementById("input-box").value;
