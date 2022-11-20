@@ -20,37 +20,26 @@ Test: "It should return a boolean of false if the input is empty."
 Code: countToValue();
 Expected Output: false
 
-Describe: numToString()
+Describe: robogerIt()
 
-Test: "It should output a boolean of true if array has a number with a specified digit."
-Code:
-const text = "hello";
-wordCounter(text);
-Expected Output: 
+Test: "It should accept input of a number and return a string."
+Code: robogerIt(5);
+Expected Output: "5" 
 
-Describe findNumber():
+Test: "It should accept input of a number and change any string object including "3" with "Won't you be my neighbor?"
+Code: robogerIt(13);
+Expected Output: "Won't you be my neighbor?" 
 
-Test: "It should output a boolean of true if array has a number with a specified digit."
-Code:
-const text = "hello";
-wordCounter(text);
-Expected Output: 
+Test: "It should accept input of a number and change any string object including "2" with "Boop."
+Code: robogerIt(211);
+Expected Output: "Boop"  
 
-Describe replaceNumberWithText():
+Test: "It should accept input of a number and change any string object including "1" with "Beep."
+Code: robogerIt(10);
+Expected Output: "Beep"  
 
-Test: "It should accept input of a number and output text."
-Code:
-Expected Output: 
-
-Test: "It should accept input of multiple numbers and output multiple words."
-Code:
-Expected Output: 
-
-Test: "It should accept input of numbers and output both numbers and text depending on the number."
-Code:
-Expected Output: 
-
-Describe addYourNameHere():
-Test: "It should return a phrase that uses inputted name."
-Code:
-Expected Output: 
+Test: "It should accept input of an array and return any string object not including "1," "2," "3," as the original number value of the object."
+Code: 
+let arrayOfNum = [5, 6, 7, 10, 12, 13];
+arrayOfNum.map(robogerIt);
+Expected Output: [5, 6, 7, "Beep", "Boop", "Won't you be my neighbor?"]

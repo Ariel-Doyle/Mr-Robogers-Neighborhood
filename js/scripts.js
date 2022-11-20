@@ -18,12 +18,12 @@ function countToValue(number) {
 function robogerIt(number) {
   let numToString = "" + number;
   if (numToString.includes("3")) {
-    return "Won't you get lost?";
+    return "Won't you be my neighbor?";
   } else if (numToString.includes("2")) {
-    return "Boop, MF-er";
+    return "Boop";
   } else if (numToString.includes("1")) {
     return "Beep";
   } else {
-    return Number(number);
+    return number;
   }
 }
