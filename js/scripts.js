@@ -30,8 +30,8 @@ function robogerIt(number) {
 function handleFormSubmission(e) {
   e.preventDefault();
   const form = document.querySelector("form");
-  const tryAgainBtn = document.getElementById("reset-btn");
   const showNumbersBtn = document.getElementById("show-results-btn");
+  const tryAgainBtn = document.getElementById("reset-btn");
   const inputDiv = document.getElementById("input-field");
   const resultDiv = document.getElementById("count-results");
 
@@ -43,6 +43,7 @@ function handleFormSubmission(e) {
     inputDiv.classList.remove("hidden");
     resultDiv.classList.add("hidden");
   });
+  
 
   form.addEventListener("submit", function() {
     let input = document.getElementById("input-box").value;
@@ -54,26 +55,15 @@ function handleFormSubmission(e) {
   });
 }
 
-function addName (array) {
-  let userName = document.getElementById("name-box").value;
-  let input = document.getElementById("input-box").value;
-  const arrayFromInput = countToValue(input);
-  const arrayWithWordsAdded = arrayFromInput.map(robogerIt);
-  arrayWithWordsAdded.forEach(function(element) {
-    if (element === "Won't you be my neighbor?"); {
-    element + userName;
-    }
-  });
-}
-
-
 window.addEventListener("load", function() {
-  const startBtn = document.getElementById("start-btn");
   const formDiv = document.getElementById("form-div");
+  const startBtn = document.getElementById("start-btn");
+
   document.body.addEventListener("click", function() {
     formDiv.removeAttribute("class");
     startBtn.classList.add("hidden");
   });
+  
   document.querySelector("form#form-div").addEventListener("submit", handleFormSubmission);
 });
 
