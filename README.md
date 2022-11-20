@@ -20,12 +20,20 @@ Test: "It should return a boolean of false if the input is empty."
 Code: countToValue();
 Expected Output: false
 
-Describe returnString():
+Describe: numToString()
 
-Test: "It should accept the value of a number and return the value of a string."
+Test: "It should output a boolean of true if array has a number with a specified digit."
 Code:
-//example const text = "hello";
-//example wordCounter(text);
+const text = "hello";
+wordCounter(text);
+Expected Output: 
+
+Describe findNumber():
+
+Test: "It should output a boolean of true if array has a number with a specified digit."
+Code:
+const text = "hello";
+wordCounter(text);
 Expected Output: 
 
 Describe replaceNumberWithText():

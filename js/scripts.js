@@ -14,17 +14,16 @@ function countToValue(number) {
   return newArray;
 }
 
-
-function findNumber(array) {
-  let separateOutNum = ("" + number).split("");
-  //let sum=0;
-  for (i=0; i < separateOutNum.length; i++) {
-    if (separateOutNum.includes(3)) {
-      separateOutNum += 1;
-    }
-    //sum = sum + parseInt(output[i], 10);
+// This will need to use array.map!
+function robogerIt(number) {
+  let numToString = "" + number;
+  if (numToString.includes("3")) {
+    return "Won't you get lost?";
+  } else if (numToString.includes("2")) {
+    return "Boop, MF-er";
+  } else if (numToString.includes("1")) {
+    return "Beep";
+  } else {
+    return Number(number);
   }
-  return separateOutNum;   
 }
-
-
