@@ -30,26 +30,51 @@ function robogerIt(number) {
 function handleFormSubmission(e) {
   e.preventDefault();
   const form = document.querySelector("form");
-  const startBtn = document.getElementById("start-btn");
   const tryAgainBtn = document.getElementById("reset-btn");
-  const inputDiv = document.getElementById("input-field")
-  const formDiv = document.getElementById("form-div");
+  const showNumbersBtn = document.getElementById("show-results-btn");
+  const inputDiv = document.getElementById("input-field");
+  const resultDiv = document.getElementById("count-results");
 
-  document.body.addEventListener("click", function() {
-    formDiv.removeAttribute("class");
-    startBtn.classList.add("hidden");
+  showNumbersBtn.addEventListener("click", function() {
+    inputDiv.classList.remove("hidden");
+    resultDiv.classList.remove("hidden");
+  });
+  tryAgainBtn.addEventListener("click", function() {
+    inputDiv.classList.remove("hidden");
+    resultDiv.classList.add("hidden");
   });
 
   form.addEventListener("submit", function() {
     let input = document.getElementById("input-box").value;
     const arrayFromInput = countToValue(input);
     const arrayWithWordsAdded = arrayFromInput.map(robogerIt);
+
     inputDiv.classList.add("hidden");
     document.getElementById("output").innerText = arrayWithWordsAdded.join(" ");
   });
 }
 
+function addName (array) {
+  let userName = document.getElementById("name-box").value;
+  let input = document.getElementById("input-box").value;
+  const arrayFromInput = countToValue(input);
+  const arrayWithWordsAdded = arrayFromInput.map(robogerIt);
+  arrayWithWordsAdded.forEach(function(element) {
+    if (element === "Won't you be my neighbor?"); {
+    element + userName;
+    }
+  });
+}
+
 
 window.addEventListener("load", function() {
+  const startBtn = document.getElementById("start-btn");
+  const formDiv = document.getElementById("form-div");
+  document.body.addEventListener("click", function() {
+    formDiv.removeAttribute("class");
+    startBtn.classList.add("hidden");
+  });
   document.querySelector("form#form-div").addEventListener("submit", handleFormSubmission);
 });
+
+
