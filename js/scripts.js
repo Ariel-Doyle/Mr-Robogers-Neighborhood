@@ -36,8 +36,13 @@ function handleFormSubmission(e) {
   const inputDiv = document.getElementById("input-field")
   const formDiv = document.getElementById("form-div");
 
-  function addArrayToList() {
-
+  function addArrayToList(number) {
+    const p = document.getElementById("output");
+    const ul = document.createElement("ul");
+    const li = document.createElement("li");
+    let numToString = "" + number;
+    for (i=0; i < numToString.length; i+=1) {
+      
   }
 
   document.body.addEventListener("click", function() {
