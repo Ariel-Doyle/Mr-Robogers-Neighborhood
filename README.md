@@ -27,22 +27,17 @@ _This is a simple HTML webpage as practice for writing code in line with lessons
 
 ## Known Bugs
 
-- _Currently, two clicks are required of the "Show Me The Numbers!" button to submit the form field._
+- _Currently, two clicks are required for the "Show Me The Numbers!" button to submit the form field._
 
 ## Recognition
 
-_Background image from: <a href="https://www.vecteezy.com/free-vector/coding-background">Coding Background Vectors by Vecteezy</a>_
+_Photo by <a href="https://unsplash.com/@rocknrollmonkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rock'n Roll Monkey</a> on <a href="https://unsplash.com/s/photos/friendly-robot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>_
 
 ## License
 
 _[MIT](https://choosealicense.com/licenses/mit/)_
 
-Copyright (c) _2022_ _Ariel Doyle_
-
-Photo by <a href="https://unsplash.com/@rocknrollmonkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rock'n Roll Monkey</a> on <a href="https://unsplash.com/s/photos/friendly-robot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-<a href="https://www.vecteezy.com/free-vector/friendly-robot">Friendly Robot Vectors by Vecteezy</a>
-  
+Copyright (c) _2022_ _Ariel Doyle_ 
   
 
 ## TDD testing implemented:
